@@ -1347,3 +1347,15 @@ class LTXVModel(LTXBaseModel):
         )
 
         return x
+
+# Compat patch for TeaCache (official ComfyUI lacks this export)
+try:
+    from comfy.ldm.modules.attention import precompute_freqs_cis
+except ImportError:
+    print("[Patch] precompute_freqs_cis patched!")
+    import torch
+    def precompute_freqs_cis(dim: int, end: int, theta: float = 10000.0):
+        freqs = 1.0 / (theta ** (torch.arange(0, dim, 2, dtype=torch.float32)[:(dim // 2)] / dim))
+        t = torch.arange(end, device=freqs.device)
+        freqs = torch.outer(t, freqs)
+        return torch.polar(torch.ones_like(freqs), freqs)

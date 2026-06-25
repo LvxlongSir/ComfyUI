@@ -1,0 +1,1 @@
+find custom_nodes -name requirements.txt -exec pip install -r {} \;

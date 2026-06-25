@@ -397,7 +397,7 @@ class ControlNet(nn.Module):
                     f"Control type {max_type_name}({max_type}) is out of range for the number of control types" +
                     f"({self.num_control_type}) supported.\n" +
                     "Please consider using the ProMax ControlNet Union model.\n" +
-                    "https://huggingface.co/xinsir/controlnet-union-sdxl-1.0/tree/main"
+                    "https://hf-mirror.com/xinsir/controlnet-union-sdxl-1.0/tree/main"
                 )
 
             emb += self.control_add_embedding(control_type, emb.dtype, emb.device)

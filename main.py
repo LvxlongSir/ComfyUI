@@ -33,6 +33,31 @@ from comfy_execution.utils import get_executing_context
 from comfy_api import feature_flags
 from app.database.db import init_db, dependencies_available
 
+
+
+import subprocess
+
+import accelerate
+import transformers
+import torchvision
+
+# this is confined in .bash_profile and sourced into zsh as well
+os.environ['TORCH_HOME'] = '/Volumes/SSD/TorchCache'
+os.environ['HF_HOME'] = '/Volumes/SSD/ModelCache/huggingface'
+os.environ["HF_ENDPOINT"] = "https://hf-mirror.com"
+os.environ["PYTORCH_ENABLE_MPS_FALLBACK"] = "1"
+os.environ["PYTORCH_MPS_HIGH_WATERMARK_RATIO"] = "0.0"
+os.environ["PYTORCH_MPS_LOW_WATERMARK_RATIO"] = "0.5"
+os.environ["GGML_METAL_CONCURRENCY_DISABLE"] = "1"
+os.environ["GGML_METAL_DEVICE_INDEX"] = "1"
+os.environ["GGML_METAL_VRAM_RESERVE_MB"] = "512"
+os.environ["GGML_METAL_FORCE_PRIVATE"] = "1"
+os.environ["GGML_METAL_N_CB"] = "2"
+os.environ["OMP_NUM_THREADS"] = "16"
+# os.environ["COMFYUI_LOWVRAM"] = "1"
+
+
+
 if __name__ == "__main__":
     #NOTE: These do not do anything on core ComfyUI, they are for custom nodes.
     os.environ['HF_HUB_DISABLE_TELEMETRY'] = '1'
@@ -221,6 +246,37 @@ import gc
 if 'torch' in sys.modules:
     logging.warning("WARNING: Potential Error in code: Torch already imported, torch should never be imported before this point.")
 
+# --- PATCH: fix MPS Linear NaN on Qwen/SDXL (Intel Mac + RX 6900 XT) ---
+import torch
+_original_linear = torch.nn.functional.linear
+
+def _rdna2_mps_linear(input, weight, bias=None):
+    if input.device.type == "mps" and input.shape[-1] >= 256:
+        # 把 linear 降级为 torch.mm on MPS（避开坏 kernel）
+        orig_shape = input.shape
+        input_2d = input.reshape(-1, orig_shape[-1])
+        out = torch.mm(input_2d, weight.t().contiguous())
+        out = out.reshape(*orig_shape[:-1], weight.shape[0])
+        if bias is not None:
+            out = out + bias
+        return out
+    return _original_linear(input, weight, bias)
+
+torch.nn.functional.linear = _rdna2_mps_linear
+print("[patch] RDNA2 MPS F.linear patched")
+# ---------------------------------------------------------------
+print('torchvision:', torchvision.__version__)
+print("torch: ".upper(), torch.__version__)  # 2.2.2
+print("transformers: ".upper(), transformers.__version__)  # 4.43.4
+print("accelerate: ".upper(), accelerate.__version__)  # 4.43.4
+print("MPS: ", torch.backends.mps.is_available())
+
+print('MKLDNN:', torch.backends.mkldnn.is_available())
+lib = os.path.join(os.path.dirname(torch.__file__), 'lib', 'libtorch_cpu.dylib')
+out = subprocess.run(['otool', '-L', lib], capture_output=True, text=True)
+output = out.stdout.lower()
+blas = "MKL" if 'mkl' in output else ("Accelerate (vecLib)" if 'accelerate' in output else "Other")
+print(f"BLAS: {blas}")
 
 import comfy.utils
 

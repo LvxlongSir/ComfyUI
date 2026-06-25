@@ -1,5 +1,5 @@
 # Jina CLIP v2 and Jina Embeddings v3 both use their modified XLM-RoBERTa architecture. Reference implementation:
-# Jina CLIP v2 (both text and vision): https://huggingface.co/jinaai/jina-clip-implementation/blob/39e6a55ae971b59bea6e44675d237c99762e7ee2/modeling_clip.py
+# Jina CLIP v2 (both text and vision): https://hf-mirror.com/jinaai/jina-clip-implementation/blob/39e6a55ae971b59bea6e44675d237c99762e7ee2/modeling_clip.py
 # Jina XLM-RoBERTa (text only): http://huggingface.co/jinaai/xlm-roberta-flash-implementation/blob/2b6bc3f30750b3a9648fe9b63448c09920efe9be/modeling_xlm_roberta.py
 
 from dataclasses import dataclass
@@ -26,7 +26,7 @@ class JinaClip2TokenizerWrapper(sd1_clip.SD1Tokenizer):
     def __init__(self, embedding_directory=None, tokenizer_data={}):
         super().__init__(embedding_directory=embedding_directory, tokenizer_data=tokenizer_data, tokenizer=JinaClip2Tokenizer, name="jina_clip_2")
 
-# https://huggingface.co/jinaai/jina-embeddings-v3/blob/343dbf534c76fe845f304fa5c2d1fd87e1e78918/config.json
+# https://hf-mirror.com/jinaai/jina-embeddings-v3/blob/343dbf534c76fe845f304fa5c2d1fd87e1e78918/config.json
 @dataclass
 class XLMRobertaConfig:
     vocab_size: int = 250002
@@ -183,7 +183,7 @@ class XLMRobertaModel_(nn.Module):
 
         sequence_output = self.encoder(x, attention_mask=mask)
 
-        # Mean pool, see https://huggingface.co/jinaai/jina-clip-implementation/blob/39e6a55ae971b59bea6e44675d237c99762e7ee2/hf_model.py
+        # Mean pool, see https://hf-mirror.com/jinaai/jina-clip-implementation/blob/39e6a55ae971b59bea6e44675d237c99762e7ee2/hf_model.py
         pooled_output = None
         if attention_mask is None:
             pooled_output = sequence_output.mean(dim=1)

@@ -124,7 +124,7 @@ cur_path = os.path.dirname(update_py_path)
 
 
 req_path = os.path.join(cur_path, "current_requirements.txt")
-repo_req_path = os.path.join(repo_path, "requirements.txt")
+repo_req_path = os.path.join(repo_path, "requirements.txt.disabled.disabled.disabled.disabled.disabled.disabled")
 
 
 def files_equal(file1, file2):

@@ -12,7 +12,7 @@ run_amd_gpu_enable_dynamic_vram.bat
 
 IF YOU GET A RED ERROR IN THE UI MAKE SURE YOU HAVE A MODEL/CHECKPOINT IN: ComfyUI\models\checkpoints
 
-You can download the stable diffusion XL one from: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/blob/main/sd_xl_base_1.0_0.9vae.safetensors
+You can download the stable diffusion XL one from: https://hf-mirror.com/stabilityai/stable-diffusion-xl-base-1.0/blob/main/sd_xl_base_1.0_0.9vae.safetensors
 
 
 RECOMMENDED WAY TO UPDATE:
