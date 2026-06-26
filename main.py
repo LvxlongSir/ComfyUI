@@ -54,9 +54,12 @@ os.environ["GGML_METAL_VRAM_RESERVE_MB"] = "512"
 os.environ["GGML_METAL_FORCE_PRIVATE"] = "1"
 os.environ["GGML_METAL_N_CB"] = "2"
 os.environ["OMP_NUM_THREADS"] = "16"
+os.environ["NUMEXPR_MAX_THREADS"] = "16"
+os.environ["NUMEXPR_NUM_THREADS"] = "16"
 # os.environ["COMFYUI_LOWVRAM"] = "1"
-
-
+import numexpr;
+print("NUMEXPR_NUM_THREADS: ",numexpr.get_num_threads())  #still 8?
+print("PYTORCH_ENABLE_MPS_FALLBACK", os.environ.get('PYTORCH_ENABLE_MPS_FALLBACK'))
 
 if __name__ == "__main__":
     #NOTE: These do not do anything on core ComfyUI, they are for custom nodes.

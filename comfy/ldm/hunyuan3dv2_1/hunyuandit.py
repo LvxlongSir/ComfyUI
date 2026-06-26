@@ -537,7 +537,7 @@ class FinalLayer(nn.Module):
 
 class HunYuanDiTPlain(nn.Module):
 
-    # init with the defaults values from https://huggingface.co/tencent/Hunyuan3D-2.1/blob/main/hunyuan3d-dit-v2-1/config.yaml
+    # init with the defaults values from https://hf-mirror.com/tencent/Hunyuan3D-2.1/blob/main/hunyuan3d-dit-v2-1/config.yaml
     def __init__(
         self,
         in_channels: int = 64,

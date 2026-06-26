@@ -1634,7 +1634,7 @@
       "outputs": [],
       "properties": {},
       "widgets_values": [
-        "ComfyUI custom nodes：\nhttps://github.com/TTPlanetPig/Comfyui_TTP_Toolset.git\nhttps://github.com/chflame163/ComfyUI_LayerStyle.git\nhttps://github.com/cubiq/ComfyUI_essentials.git\nhttps://github.com/rgthree/rgthree-comfy.git\n\nDownload lora file：\nhttps://huggingface.co/chflame163/kontext_hires/tree/main"
+        "ComfyUI custom nodes：\nhttps://github.com/TTPlanetPig/Comfyui_TTP_Toolset.git\nhttps://github.com/chflame163/ComfyUI_LayerStyle.git\nhttps://github.com/cubiq/ComfyUI_essentials.git\nhttps://github.com/rgthree/rgthree-comfy.git\n\nDownload lora file：\nhttps://hf-mirror.com/chflame163/kontext_hires/tree/main"
       ],
       "color": "#432",
       "bgcolor": "#653"

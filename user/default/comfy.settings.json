@@ -210,8 +210,47 @@
     "Comfy.InstalledVersion": "1.37.11",
     "Comfy.TutorialCompleted": true,
     "Comfy.Templates.SortBy": "default",
-    "Comfy.Queue.History.Expanded": true,
+    "Comfy.Queue.History.Expanded": false,
     "Comfy.LinkRenderMode": 2,
     "Comfy.Templates.SelectedModels": [],
-    "Comfy.RightSidePanel.IsOpen": true
+    "Comfy.RightSidePanel.IsOpen": true,
+    "Comfy.VueNodes.Enabled": false,
+    "Crystools.WhichHdd": "/Volumes/SSD",
+    "Crystools.ShowHdd": true,
+    "KJNodes.browserStatus": false,
+    "Comfy.WorkflowActions.SeenItems": [
+        "enter-app-mode",
+        "enter-builder-mode"
+    ],
+    "Comfy.VueNodes.AutoScaleLayout": true,
+    "Comfy.UseNewMenu": "Top",
+    "Comfy.Sidebar.Style": "floating",
+    "Comfy.Sidebar.Size": "normal",
+    "LiteGraph.ContextMenu.Scaling": false,
+    "Use Everywhere.Graphics.tooltips": true,
+    "Crystools.ProgressBar": true,
+    "Comfy.Keybinding.NewBindings": [
+        {
+            "commandId": "Comfy.Manager.ShowLegacyManagerMenu",
+            "combo": {
+                "key": "F4",
+                "ctrl": false,
+                "alt": true,
+                "shift": false
+            }
+        }
+    ],
+    "Comfy.Keybinding.UnsetBindings": [],
+    "Comfy.WidgetControlMode": "after",
+    "Comfy.Node.AlwaysShowAdvancedWidgets": true,
+    "Comfy.Release.Version": "0.26.1",
+    "Comfy.Release.Status": "changelog seen",
+    "Comfy.Release.Timestamp": 1782483384820,
+    "Comfy.Execution.PreviewMethod": "latent2rgb",
+    "Comfy.Templates.SelectedRunsOn": [
+        "ComfyUI"
+    ],
+    "Comfy.Templates.SelectedUseCases": [
+        "\u56fe\u50cf\u653e\u5927"
+    ]
 }

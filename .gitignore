@@ -24,3 +24,6 @@ uv.lock
 .comfy_environment
 /tests
 /tests-unit
+/user/
+!/user/default/workflows
+!/user/default/comfy.settings.json

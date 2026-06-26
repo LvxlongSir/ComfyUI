@@ -541,7 +541,7 @@
               "models": [
                 {
                   "name": "depth_anything_3_mono_large.safetensors",
-                  "url": "https://huggingface.co/Comfy-Org/Depth-Anything-3/resolve/main/geometry_estimation/depth_anything_3_mono_large.safetensors",
+                  "url": "https://hf-mirror.com/Comfy-Org/Depth-Anything-3/resolve/main/geometry_estimation/depth_anything_3_mono_large.safetensors",
                   "directory": "geometry_estimation"
                 }
               ]

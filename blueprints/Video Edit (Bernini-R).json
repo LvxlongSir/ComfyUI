@@ -537,7 +537,7 @@
               "models": [
                 {
                   "name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
-                  "url": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors?download=true",
+                  "url": "https://hf-mirror.com/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors?download=true",
                   "directory": "text_encoders"
                 }
               ],
@@ -598,7 +598,7 @@
               "models": [
                 {
                   "name": "Wan2_1_VAE_bf16.safetensors",
-                  "url": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Wan2_1_VAE_bf16.safetensors?download=true",
+                  "url": "https://hf-mirror.com/Kijai/WanVideo_comfy/resolve/main/Wan2_1_VAE_bf16.safetensors?download=true",
                   "directory": "vae"
                 }
               ],
@@ -671,7 +671,7 @@
               "models": [
                 {
                   "name": "lightx2v_T2V_14B_cfg_step_distill_v2_lora_rank64_bf16.safetensors",
-                  "url": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Lightx2v/lightx2v_T2V_14B_cfg_step_distill_v2_lora_rank64_bf16.safetensors?download=true",
+                  "url": "https://hf-mirror.com/Kijai/WanVideo_comfy/resolve/main/Lightx2v/lightx2v_T2V_14B_cfg_step_distill_v2_lora_rank64_bf16.safetensors?download=true",
                   "directory": "loras"
                 }
               ],
@@ -918,7 +918,7 @@
               "models": [
                 {
                   "name": "wan2.2_bernini_r_high_noise_fp8_scaled.safetensors",
-                  "url": "https://huggingface.co/Comfy-Org/Bernini-R/resolve/main/diffusion_models/wan2.2_bernini_r_high_noise_fp8_scaled.safetensors",
+                  "url": "https://hf-mirror.com/Comfy-Org/Bernini-R/resolve/main/diffusion_models/wan2.2_bernini_r_high_noise_fp8_scaled.safetensors",
                   "directory": "diffusion_models"
                 }
               ],
@@ -992,7 +992,7 @@
               "models": [
                 {
                   "name": "lightx2v_T2V_14B_cfg_step_distill_v2_lora_rank64_bf16.safetensors",
-                  "url": "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Lightx2v/lightx2v_T2V_14B_cfg_step_distill_v2_lora_rank64_bf16.safetensors?download=true",
+                  "url": "https://hf-mirror.com/Kijai/WanVideo_comfy/resolve/main/Lightx2v/lightx2v_T2V_14B_cfg_step_distill_v2_lora_rank64_bf16.safetensors?download=true",
                   "directory": "loras"
                 }
               ],
@@ -1064,7 +1064,7 @@
               "models": [
                 {
                   "name": "wan2.2_bernini_r_low_noise_fp8_scaled.safetensors",
-                  "url": "https://huggingface.co/Comfy-Org/Bernini-R/resolve/main/diffusion_models/wan2.2_bernini_r_low_noise_fp8_scaled.safetensors",
+                  "url": "https://hf-mirror.com/Comfy-Org/Bernini-R/resolve/main/diffusion_models/wan2.2_bernini_r_low_noise_fp8_scaled.safetensors",
                   "directory": "diffusion_models"
                 }
               ],

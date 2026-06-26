@@ -1,0 +1,26 @@
+<script>
+    (function () {
+        const observer = new MutationObserver(() => {
+            document.querySelectorAll('.p-tooltip').forEach(el => {
+                if (!el.closest('[role="dialog"]')) {
+                    requestAnimationFrame(() => {
+                        el.style.setProperty('display', 'none', 'important');
+                        el.style.setProperty('opacity', '0', 'important');
+                        el.remove();
+                    });
+                }
+            });
+        });
+
+        observer.observe(document.body, {childList: true, subtree: true});
+
+        setInterval(() => {
+            document.querySelectorAll('.p-tooltip').forEach(el => {
+                if (!document.querySelector('[role="dialog"]')) {
+                    el.style.display = 'none';
+                    el.remove();
+                }
+            });
+        }, 150);
+    })();
+</script>

@@ -8593,6 +8593,7 @@
             "IdentityForge",
             "IdentityForgeArchetype",
             "IdentityForgeCosplayer",
+            "IdentityForgeCreature",
             "IdentityForgeModifier",
             "IdentityForgeVaultLoad",
             "IdentityForgeVaultSave"
@@ -8621,7 +8622,9 @@
     "https://github.com/EnviralDesign/comfyUI-enviral-design-node-pack": [
         [
             "EnviralCheckpointName",
+            "EnviralColorMatchMethod",
             "EnviralColorMatchV2",
+            "EnviralColorMatchV2Method",
             "EnviralImageResizeKit",
             "EnviralLazyIndexSwitch",
             "EnviralLmstudioUnified",
@@ -11395,6 +11398,17 @@
             "title_aux": "ComfyUI-Qwen-Camera-Selector"
         }
     ],
+    "https://github.com/HallettVisual/ComfyUI-Smart-Image-Crop-and-Stitch": [
+        [
+            "Smart Image Crop (Still)",
+            "Smart Image Stitcher (Still)",
+            "SmartImageCrop",
+            "SmartImageStitcher"
+        ],
+        {
+            "title_aux": "Smart Image Crop and Stitch"
+        }
+    ],
     "https://github.com/Hangover3832/ComfyUI_Hangover-Utils": [
         [
             "Get Workflow Data",
@@ -12276,6 +12290,7 @@
             "IAMCCS_AudioExtender",
             "IAMCCS_AudioExtensionMath",
             "IAMCCS_AudioNormalizeForLTX",
+            "IAMCCS_AudioPhaseLazyGate",
             "IAMCCS_AudioSegmentAutoPlanner",
             "IAMCCS_AudioTimelineAssembler",
             "IAMCCS_AudioTimelineGate",
@@ -12295,6 +12310,7 @@
             "IAMCCS_CineDialogueLineRouter",
             "IAMCCS_CineDialoguePromptKit",
             "IAMCCS_CineDialogueTimingReconciler",
+            "IAMCCS_CineDirectorGuideB",
             "IAMCCS_CineEmotionButtons",
             "IAMCCS_CineFLFEngineSimple",
             "IAMCCS_CineFLFEngineSimpleDyno",
@@ -12314,6 +12330,7 @@
             "IAMCCS_CineLTXSequencerExact",
             "IAMCCS_CineLatentDurationCrop",
             "IAMCCS_CineLineStacker",
+            "IAMCCS_CineMotionSketch",
             "IAMCCS_CineMultiGenDirector",
             "IAMCCS_CineMusicVideoPlanner",
             "IAMCCS_CinePPAntiAlias",
@@ -12454,8 +12471,11 @@
             "IAMCCS_ModelWithLoRA_RuntimeBridge",
             "IAMCCS_MotionBridgeLoad",
             "IAMCCS_MotionBridgeSave",
+            "IAMCCS_MotionGuideBridge",
+            "IAMCCS_MotionPartsICLoRAApply",
             "IAMCCS_MotionScale",
             "IAMCCS_MotionScaleAdvanced",
+            "IAMCCS_MotionSketchRenderer",
             "IAMCCS_MoveAhead",
             "IAMCCS_MoveAheadEnforcer",
             "IAMCCS_MultiSwitch",
@@ -12482,6 +12502,7 @@
             "IAMCCS_SelectScheduledWanModelPairFromConditioning",
             "IAMCCS_SetAutoLink",
             "IAMCCS_ShotboardPlannerV2V",
+            "IAMCCS_ShotboardVideoEditor",
             "IAMCCS_SourceFramesToDisk",
             "IAMCCS_SourceRangeFromSegmentPlan",
             "IAMCCS_StartDirToVideoLatent",
@@ -12507,6 +12528,8 @@
             "IAMCCS_WDC_LTXSequencer",
             "IAMCCS_WDC_LTXSequencerFixed5",
             "IAMCCS_WDC_MultiImageLoader",
+            "IAMCCS_WanAnimateExtendPlan",
+            "IAMCCS_WanAnimateExtends",
             "IAMCCS_WanChunkGatePure",
             "IAMCCS_WanCineInfoPure",
             "IAMCCS_WanContinuityGuide",
@@ -15825,6 +15848,14 @@
             "title_aux": "LiquidGold-Wildcard"
         }
     ],
+    "https://github.com/Little-God1983/ComfyUI-AI2Go-Utils": [
+        [
+            "AI2GoIdeogram4PromptBuilder"
+        ],
+        {
+            "title_aux": "ComfyUI-AI2Go-Utils"
+        }
+    ],
     "https://github.com/Localsmile/comfyui_anima_artist_cross_attn_mix": [
         [
             "AnimaArtistCrossAttnMix"
@@ -16641,6 +16672,7 @@
     ],
     "https://github.com/Maxed-Out-99/ComfyUI-MaxedOut": [
         [
+            "BboxDetectorCombinedBatchMXD",
             "CombineVideos_MXD",
             "Crop Image By Mask",
             "Extract Workflow From Image MXD",
@@ -16654,13 +16686,19 @@
             "Get Latent Size",
             "GroupVideoFramesMXD",
             "Image Scale To Total Pixels (SDXL Safe)",
+            "ImageAndMaskPreviewMXD",
+            "LTXKSampler2_MXD",
+            "LTXKSampler_MXD",
+            "LTXVideoEmptyLatent_MXD",
             "LTX_Image_Scaler_MXD",
             "LatentHalfMasks",
             "Load Image Batch MXD",
             "LoadImageWithPromptsMXD",
             "LoadLatent_I2V_MXD",
+            "LoadLatent_VACE22_MXD",
             "LoadLatent_WithParams",
             "LoadLatents_FromFolder_I2V_MXD",
+            "LoadLatents_FromFolder_VACE22_MXD",
             "LoadLatents_FromFolder_WithParams",
             "LoadVideoMXD",
             "MXDCharacterCreate",
@@ -16669,6 +16707,7 @@
             "MxdImageComparerSave",
             "MxdPowerLoraLoader",
             "MxdVideoComparer",
+            "PadImageForOutpaintingMXD",
             "Place Image By Mask",
             "PreviewVideoMXD",
             "Prompt With Guidance (Flux)",
@@ -16678,12 +16717,12 @@
             "Save Image MXD",
             "SaveLatentMXD",
             "SaveLatent_I2V_MXD",
+            "SaveLatent_VACE22_MXD",
             "SaveVideoMXD",
             "Sdxl Empty Latent Image",
             "SmartCropByMaskMXD",
             "WAN22_I2V_Image_Scaler_MXD",
             "WAN22_I2V_Match_Resolution_MXD",
-            "WAN22_I2V_Video_Prep_Advanced_MXD",
             "WAN22_I2V_Video_Prep_MXD",
             "Wan22FirstLastImageToVideoMXD",
             "Wan22ImageToVideoMXD",
@@ -18030,6 +18069,10 @@
         [
             "NKDKleinPostsampling",
             "NKDKleinPresampling",
+            "NKDKleinPromptBuilder",
+            "NKDKleinReferenceControl",
+            "NKDKleinReferenceFit",
+            "NKDKleinReferenceRegion",
             "NKDKleinReferenceWeight"
         ],
         {
@@ -24257,6 +24300,16 @@
             "title_aux": "ComfyUI Ideogram Palette and Prompt Tools"
         }
     ],
+    "https://github.com/SurrealByDesign/ComfyUI-Krea-Palette-Tools": [
+        [
+            "KreaPaletteExtractor",
+            "KreaPaletteStyleReference",
+            "KreaPaletteToPromptText"
+        ],
+        {
+            "title_aux": "ComfyUI Krea Palette Tools"
+        }
+    ],
     "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes": [
         [
             "CR 8 Channel In",
@@ -25558,6 +25611,8 @@
             "EasyJSONUpdate",
             "EasyJsonExtractor",
             "EasyJsonSaver",
+            "EasyLTXVAudioTextEncoderLoader",
+            "EasyLTXVAudioVAELoader",
             "EasyLastImageCompare",
             "EasyLoraLoader",
             "EasyMaskDetector",
@@ -26186,6 +26241,7 @@
             "VrchTextKeyControlNode",
             "VrchTextSrtPlayerNode",
             "VrchTextSwitchOSCControlNode",
+            "VrchTextWordReplacerNode",
             "VrchTriggerToggleNode",
             "VrchTriggerToggleX4Node",
             "VrchTriggerToggleX8Node",
@@ -28748,6 +28804,8 @@
             "MIDIEditLyrics",
             "MIDIExtractLyrics",
             "MIDIMergeRepeatedChars",
+            "MIDISynthesizeAudio",
+            "MIDITranscribeAudio",
             "MidiLyricsAlignment"
         ],
         {
@@ -36619,6 +36677,7 @@
             "BriaTransparentVideoBackground",
             "BriaVideoGreenScreen",
             "BriaVideoReplaceBackground",
+            "BuildJsonPromptIdeogram",
             "ByteDance2FirstLastFrameNode",
             "ByteDance2ReferenceNode",
             "ByteDance2TextToVideoNode",
@@ -36690,9 +36749,12 @@
             "ControlNetApplySD3",
             "ControlNetInpaintingAliMamaApply",
             "ControlNetLoader",
+            "ConvertArrayToString",
+            "ConvertDictionaryToString",
             "ConvertStringToComboNode",
             "CosmosImageToVideoLatent",
             "CosmosPredict2ImageToVideoLatent",
+            "CreateBoundingBoxes",
             "CreateCameraInfo",
             "CreateList",
             "CreateVideo",
@@ -36999,6 +37061,7 @@
             "ModelMergeCosmosPredict2_14B",
             "ModelMergeCosmosPredict2_2B",
             "ModelMergeFlux1",
+            "ModelMergeKrea2",
             "ModelMergeLTXV",
             "ModelMergeMochiPreview",
             "ModelMergeQwenImage",
@@ -37171,6 +37234,7 @@
             "SaveVideo",
             "SaveWEBM",
             "ScaleROPE",
+            "SeedNode",
             "SelectCLIPDevice",
             "SelectModelDevice",
             "SelectVAEDevice",
@@ -39112,6 +39176,7 @@
             "LoraInspector",
             "MarkdownDisplay",
             "NullAudioChecker",
+            "WorkflowConfigImage",
             "WorkflowConfigLtx23",
             "WorkflowConfigWan22"
         ],
@@ -39695,8 +39760,10 @@
     ],
     "https://github.com/doubletwisted/ComfyUI-Deadline-Plugin": [
         [
+            "DeadlineDistributedSeed",
             "DeadlineSeed",
-            "DeadlineSubmit"
+            "DeadlineSubmit",
+            "DistributedSeed"
         ],
         {
             "nodename_pattern": "DeadlineSubmitNode",
@@ -40892,6 +40959,15 @@
         ],
         {
             "title_aux": "comfyui-videoframenode"
+        }
+    ],
+    "https://github.com/ethanfel/ComfyUI-Krea2TextEncoder": [
+        [
+            "Krea2SystemPrompt",
+            "TextEncodeKrea2"
+        ],
+        {
+            "title_aux": "Text Encode (Krea2)"
         }
     ],
     "https://github.com/ethanfel/ComfyUI-LoRA-Optimizer": [
@@ -45185,6 +45261,14 @@
             "title_aux": "ComfyUI Text Remove Node"
         }
     ],
+    "https://github.com/huwhitememes/comfyui-krea2-conditioning": [
+        [
+            "ConditioningKrea2Rebalance"
+        ],
+        {
+            "title_aux": "Krea 2 Conditioning Control"
+        }
+    ],
     "https://github.com/huygiatrng/Facefusion_comfyui": [
         [
             "AdvancedSwapFaceImage",
@@ -47451,9 +47535,7 @@
     "https://github.com/jnxmx/ComfyUI_HuggingFace_Downloader": [
         [
             "Hugging Face Download Folder",
-            "Hugging Face Download Model",
-            "HuggingFaceDownloadFolder",
-            "HuggingFaceDownloadModel"
+            "Hugging Face Download Model"
         ],
         {
             "title_aux": "ComfyUI_HuggingFace_Downloader"
@@ -53981,6 +54063,7 @@
     ],
     "https://github.com/malkuthro/ComfyUI-Koolook": [
         [
+            "CleanLatentSlice",
             "EasyAIPipeline",
             "EasyResize",
             "EasyResize_Koolook",
@@ -54001,6 +54084,9 @@
             "LTXDirector",
             "LTXDirector__koolook",
             "LTXDirector__koolook_v1_3_2",
+            "LTXGuideReferenceStrength",
+            "LTXKeyframeSoftenSchedule",
+            "LTXReferenceBindSchedule",
             "PromptRelayEncodeTimeline",
             "VHS_LoadVideoPath",
             "easy_ImageBatch"
@@ -54464,6 +54550,7 @@
             "StylePromptEncoderX21",
             "StyleStringInjector",
             "StyleStringInjector2",
+            "VAEDecoderX21",
             "VAEEncodeSoftInpainting",
             "ZSamplerTurbo",
             "ZSamplerTurbo2",
@@ -56856,6 +56943,7 @@
     "https://github.com/niknah/Spreadsheet2Video-ComfyUI": [
         [
             "Spreadsheet2Video",
+            "Spreadsheet2VideoFilesList",
             "Spreadsheet2VideoFinalVideo",
             "Spreadsheet2VideoInputImage",
             "Spreadsheet2VideoLoadText",
@@ -58776,9 +58864,11 @@
             "Gen2_Checkerboard",
             "Gen2_DwposeThreshold",
             "Gen2_Flux2KleinFix",
+            "Gen2_InputPanel",
             "Gen2_LoadQwenControlNetFun",
             "Gen2_LoadQwenLora",
             "Gen2_LoadQwenVAE",
+            "Gen2_OutputPanel",
             "Gen2_QwenClipTextEncode",
             "Gen2_QwenImageControlSampler",
             "Gen2_SeamFix",
@@ -59255,6 +59345,15 @@
         ],
         {
             "title_aux": "ComfyUI-MultiGPU"
+        }
+    ],
+    "https://github.com/pollockjj/ComfyUI-SealedCuda": [
+        [
+            "SealedFusedSSIM",
+            "SealedNATTEN"
+        ],
+        {
+            "title_aux": "comfyui-sealedcuda"
         }
     ],
     "https://github.com/polly-creative/ComfyUI_Polly_Nodes": [
@@ -60233,8 +60332,8 @@
     ],
     "https://github.com/rakkarage/ComfyRage": [
         [
+            "Alert",
             "Debug",
-            "Notify",
             "Pre",
             "Show"
         ],
@@ -64548,6 +64647,14 @@
         ],
         {
             "title_aux": "ComfyUI_YuE"
+        }
+    ],
+    "https://github.com/smthemex/Nine_Image_Compare": [
+        [
+            "NineImageCompare"
+        ],
+        {
+            "title_aux": "Nine_Image_Compare"
         }
     ],
     "https://github.com/sn0w12/ComfyUI-Sn0w-Scripts": [

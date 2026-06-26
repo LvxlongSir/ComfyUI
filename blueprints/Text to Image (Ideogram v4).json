@@ -365,7 +365,7 @@
               "models": [
                 {
                   "name": "flux2-vae.safetensors",
-                  "url": "https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/vae/flux2-vae.safetensors",
+                  "url": "https://hf-mirror.com/Comfy-Org/flux2-dev/resolve/main/split_files/vae/flux2-vae.safetensors",
                   "directory": "vae"
                 }
               ],
@@ -872,7 +872,7 @@
               "models": [
                 {
                   "name": "ideogram4_fp8_scaled.safetensors",
-                  "url": "https://huggingface.co/Comfy-Org/Ideogram-4/resolve/main/diffusion_models/ideogram4_fp8_scaled.safetensors",
+                  "url": "https://hf-mirror.com/Comfy-Org/Ideogram-4/resolve/main/diffusion_models/ideogram4_fp8_scaled.safetensors",
                   "directory": "diffusion_models"
                 }
               ],
@@ -1010,7 +1010,7 @@
               "models": [
                 {
                   "name": "qwen3vl_8b_fp8_scaled.safetensors",
-                  "url": "https://huggingface.co/Comfy-Org/Qwen3-VL/resolve/main/text_encoders/qwen3vl_8b_fp8_scaled.safetensors",
+                  "url": "https://hf-mirror.com/Comfy-Org/Qwen3-VL/resolve/main/text_encoders/qwen3vl_8b_fp8_scaled.safetensors",
                   "directory": "text_encoders"
                 }
               ],
@@ -1823,7 +1823,7 @@
               "models": [
                 {
                   "name": "ideogram4_unconditional_fp8_scaled.safetensors",
-                  "url": "https://huggingface.co/Comfy-Org/Ideogram-4/resolve/main/diffusion_models/ideogram4_unconditional_fp8_scaled.safetensors",
+                  "url": "https://hf-mirror.com/Comfy-Org/Ideogram-4/resolve/main/diffusion_models/ideogram4_unconditional_fp8_scaled.safetensors",
                   "directory": "diffusion_models"
                 }
               ],

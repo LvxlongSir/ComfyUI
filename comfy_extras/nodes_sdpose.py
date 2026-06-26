@@ -444,7 +444,7 @@ class SDPoseKeypointExtractor(io.ComfyNode):
             display_name="SDPose Keypoint Extractor",
             category="image/detection",
             search_aliases=["openpose", "pose detection", "preprocessor", "keypoints", "sdpose"],
-            description="Extract pose keypoints from images using the SDPose model: https://huggingface.co/Comfy-Org/SDPose/tree/main/checkpoints",
+            description="Extract pose keypoints from images using the SDPose model: https://hf-mirror.com/Comfy-Org/SDPose/tree/main/checkpoints",
             inputs=[
                 io.Model.Input("model"),
                 io.Vae.Input("vae"),
@@ -474,7 +474,7 @@ class SDPoseKeypointExtractor(io.ComfyNode):
         model_clone.model_options["transformer_options"] = {"patches": {"output_block_patch": [output_patch]}}
 
         if not hasattr(model.model.diffusion_model, 'heatmap_head'):
-            raise ValueError("The provided model does not have a heatmap_head. Please use SDPose model from here https://huggingface.co/Comfy-Org/SDPose/tree/main/checkpoints.")
+            raise ValueError("The provided model does not have a heatmap_head. Please use SDPose model from here https://hf-mirror.com/Comfy-Org/SDPose/tree/main/checkpoints.")
 
         head = model.model.diffusion_model.heatmap_head
         total_images = image.shape[0]

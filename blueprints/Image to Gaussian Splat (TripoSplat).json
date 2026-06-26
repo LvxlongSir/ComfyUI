@@ -784,7 +784,7 @@
               "models": [
                 {
                   "name": "dino_v3_vit_h.safetensors",
-                  "url": "https://huggingface.co/VAST-AI/TripoSplat/resolve/main/clip_vision/dino_v3_vit_h.safetensors",
+                  "url": "https://hf-mirror.com/VAST-AI/TripoSplat/resolve/main/clip_vision/dino_v3_vit_h.safetensors",
                   "directory": "clip_vision"
                 }
               ],
@@ -843,7 +843,7 @@
               "models": [
                 {
                   "name": "triposplat_vae_decoder_fp16.safetensors",
-                  "url": "https://huggingface.co/VAST-AI/TripoSplat/resolve/main/vae/triposplat_vae_decoder_fp16.safetensors",
+                  "url": "https://hf-mirror.com/VAST-AI/TripoSplat/resolve/main/vae/triposplat_vae_decoder_fp16.safetensors",
                   "directory": "vae"
                 }
               ],
@@ -901,7 +901,7 @@
               "models": [
                 {
                   "name": "flux2-vae.safetensors",
-                  "url": "https://huggingface.co/VAST-AI/TripoSplat/resolve/main/vae/flux2-vae.safetensors",
+                  "url": "https://hf-mirror.com/VAST-AI/TripoSplat/resolve/main/vae/flux2-vae.safetensors",
                   "directory": "vae"
                 }
               ],
@@ -1155,7 +1155,7 @@
               "models": [
                 {
                   "name": "triposplat_fp16.safetensors",
-                  "url": "https://huggingface.co/VAST-AI/TripoSplat/resolve/main/diffusion_models/triposplat_fp16.safetensors",
+                  "url": "https://hf-mirror.com/VAST-AI/TripoSplat/resolve/main/diffusion_models/triposplat_fp16.safetensors",
                   "directory": "diffusion_models"
                 }
               ],
@@ -1793,7 +1793,7 @@
               "models": [
                 {
                   "name": "birefnet.safetensors",
-                  "url": "https://huggingface.co/Comfy-Org/BiRefNet/resolve/main/background_removal/birefnet.safetensors",
+                  "url": "https://hf-mirror.com/Comfy-Org/BiRefNet/resolve/main/background_removal/birefnet.safetensors",
                   "directory": "background_removal"
                 }
               ],
